@@ -53,11 +53,17 @@ function findStrawberry(flavors) {
 function findCoffee(flavors) {
   const flavorCount = {};
   let count = 0;
-  flavors.forEach((val) => {
+  //   flavors.forEach((val) => {
+  //     if (val === "coffee") {
+  //       count++;
+  //     }
+  //   });
+  for (i = 0; i < flavors.length; i++) {
+    let val = flavors[i];
     if (val === "coffee") {
       count++;
     }
-  });
+  }
   return count;
 }
 console.log("There are " + findVanilla(flavors) + " Vanilla froyos.");
